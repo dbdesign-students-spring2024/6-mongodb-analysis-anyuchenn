@@ -1,4 +1,4 @@
-#MongoDB assignment
+# MongoDB assignment
 
 ## Part 1: Data Selection and Import
 
@@ -44,7 +44,7 @@ To further enhance the dataset, a thorough cleansing procedure was undertaken to
 
 
 ## Part 2: Data analysis in MongoDB
-### 1. show exactly two documents from the listings collection in any order
+### 1. Show exactly two documents from the listings collection in any order.
 ```
 db.listings.find().limit(2)
 ```
@@ -449,7 +449,7 @@ db.listings.find().limit(10).pretty()
 
 
 
-### 3. choose two hosts (by reffering to their host_id values) who are superhosts (available in the host_is_superhost field), and show all of the listings offered by both of the two hosts
+### 3. Choose two hosts (by reffering to their host_id values) who are superhosts (available in the host_is_superhost field), and show all of the listings offered by both of the two hosts.
 ```
 db.listings.find(
   {
@@ -491,7 +491,7 @@ db.listings.find(
 
 
 
-### 4. find all the unique host_name values 
+### 4. Find all the unique host_name values. 
 ```
 db.listings.distinct("host_name")
 ```
